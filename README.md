@@ -15,7 +15,11 @@
 <br>
 
 <p align="center">
-  <img alt="Imagem de demonstração da página WEB construída" src=".github/project.png" width="100%">
+  <a href="https://jordane-chaves.github.io/challenge-explorer-criando-formularios/" target="_blank" rel="noopener noreferrer">
+    <img alt="Imagem de demonstração da página WEB construída" src=".github/project.png" width="100%">
+
+    🌐 Clique aqui para cessar o projeto
+  </a>
 </p>
 
 ## 🚀 Tecnologias
