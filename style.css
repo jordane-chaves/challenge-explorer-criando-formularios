@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --gray-50: #f7f7f9;
+  --gray-100: #eeeef0;
+  --gray-200: #e2e2e4;
+  --gray-900: #121214;
+
+  --gradient-background: linear-gradient(90deg, #9bf8f3 0%, #6e7af7 200%);
+
+  --background: var(--gradient-background);
+  --background-app: var(--gray-50);
+  --background-card: white;
+  --text-color: var(--gray-900);
+  --stroke: var(--gray-100);
+}
+
+body {
+  background: var(--background) no-repeat;
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+
+  height: 100vh;
+  min-width: 33rem;
+
+  padding: 3.2rem;
+}
+
+#app {
+  background: var(--background-app);
+  border: 1px solid white;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  margin: auto;
+  max-width: 75rem;
+
+  padding: 6.4rem;
+}
+
+h1 {
+  border-bottom: 1px solid var(--stroke);
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 0.8rem;
+}
+
+.cards {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.card {
+  background: var(--background-card);
+  border: 1px solid var(--stroke);
+  border-radius: 0.8rem;
+  overflow: hidden;
+
+  min-width: 20rem;
+
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  scale: 1.05;
+}
+
+.card a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.card picture {
+  display: block;
+  max-height: 15rem;
+  max-width: 30rem;
+
+  overflow: hidden;
+}
+
+.card picture img {
+  width: 100%;
+}
+
+.card .footer {
+  text-align: center;
+  padding: 3.2rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  #app {
+    padding: 3.2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
